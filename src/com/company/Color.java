@@ -9,22 +9,10 @@ public enum Color {
     String hex;
     int r,g,b;
     Color(int r,int g,int b){
-        int max=255;
-        if(r>max){
-            this.r=max;
-        }
-        else if(g>max){
-            this.g=max;
-        }
-        else if(b>max){
-            this.b=max;
-        }
-        else {
         this.r=r;
         this.g=g;
         this.b=b;
-           }
-        rgbTohex(this.r,this.g,this.b);
+        rgbTohex(r,g,b);
 
     }
     public static String check(int input){
