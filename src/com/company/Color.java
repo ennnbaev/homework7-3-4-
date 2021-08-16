@@ -15,7 +15,7 @@ public enum Color {
         rgbTohex(r,g,b);
 
     }
-    public static String check(int input){
+    public static String check16(int input){
         int stop=16;
         if(input<stop){
             return "0"+Integer.toHexString(input);
@@ -25,7 +25,7 @@ public enum Color {
         }
     }
     public static void rgbTohex(int r,int g,int b){
-        String hex="#"+ check(r)+ check(g)+ check(b);
+        String hex="#"+ check16(r)+ check16(g)+ check16(b);
         System.out.println("Input rgb("+r+","+g+","+b+")"+" output: "+hex);
 
     }
